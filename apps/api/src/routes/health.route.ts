@@ -1,9 +1,9 @@
 import { Router } from "express";
 
-const router = Router();
+const healthRoute = Router();
 
-router.get("/", (_req, res) => {
+healthRoute.get("/", (_req, res) => {
   res.status(200).json({ status: `ok`, message: `ShipLoop AI API is running` });
 });
 
-export default router;
+export default healthRoute;

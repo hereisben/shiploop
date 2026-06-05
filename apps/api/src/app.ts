@@ -1,6 +1,7 @@
 import express from "express";
 import { errorMiddleware } from "./middlewares/error.middleware.js";
 import { notFoundMiddleware } from "./middlewares/not-found.middleware.js";
+import dbTestRoute from "./routes/db-test.route.js";
 import healthRoute from "./routes/health.route.js";
 
 const app = express();
@@ -12,6 +13,7 @@ app.get("/", (_req, res) => {
 });
 
 app.use("/api/health", healthRoute);
+app.use("/api/db-test", dbTestRoute);
 app.use(notFoundMiddleware);
 app.use(errorMiddleware);
 
