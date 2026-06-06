@@ -187,7 +187,7 @@ Do not add these in MVP:
 For local development:
 
 ```txt
-http://localhost:4000/api
+http://localhost:5000/api
 ```
 
 For production:

@@ -131,7 +131,7 @@ The project can use:
 Example:
 
 ```bash
-curl http://localhost:4000/api/projects
+curl http://localhost:5000/api/projects
 ```
 
 ### 3. Good for Portfolio Review

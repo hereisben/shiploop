@@ -15,9 +15,9 @@ app.get("/", (_req, res) => {
 
 app.use("/api/health", healthRoute);
 app.use("/api/db-test", dbTestRoute);
+app.use("/api/projects", projectRouter);
+
 app.use(notFoundMiddleware);
 app.use(errorMiddleware);
-
-app.use("/api/projects", projectRouter);
 
 export default app;

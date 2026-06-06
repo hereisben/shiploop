@@ -474,7 +474,7 @@ Example:
 ```txt
 Environment Name: Local
 Frontend URL: http://localhost:3000
-API URL: http://localhost:4000
+API URL: http://localhost:5000
 AI Service URL: http://localhost:8000
 Database: Local PostgreSQL
 Browser: Chrome
@@ -2317,7 +2317,7 @@ Testing will cover functional behavior, validation rules, negative cases, API be
 
 - Environment: Local
 - Frontend URL: http://localhost:3000
-- API URL: http://localhost:4000
+- API URL: http://localhost:5000
 - Database: Local PostgreSQL
 - Browser: Chrome
 - Device: Desktop

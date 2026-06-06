@@ -41,6 +41,14 @@ projectRouter.get("/", async (_req, res, next) => {
   try {
     const projects = await getProjects();
 
+    if (projects.length === 0) {
+      return res.status(200).json({
+        success: true,
+        message: `No projects found`,
+        data: [],
+      });
+    }
+
     return res.status(200).json({
       success: true,
       message: `Get projects successfully`,
